@@ -1,0 +1,60 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Secure Login",
+    "version": "1.0",
+    "description": "<h2>Login</h2><p>Enter your credentials to continue.</p><p><b>Note:</b> In a vulnerable Swagger UI, credentials entered here could be exfiltrated via a malicious backend or webhook.</p>"
+  },
+  "host": "example.com",
+  "basePath": "/",
+  "schemes": ["https"],
+  "paths": {
+    "/login": {
+      "post": {
+        "summary": "User authentication",
+        "description": "<p>This endpoint simulates a login request.</p><p><b>POC:</b> Credentials submitted here demonstrate how a malicious OpenAPI specification could be used for phishing or credential harvesting.</p>",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "required": ["username", "password"],
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "admin"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "admin123"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Credentials received",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": "received"
+                },
+                "forwarded_to": {
+                  "type": "string",
+                  "example": "https://webhook.site/XXXXXX"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
