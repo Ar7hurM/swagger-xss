@@ -46,10 +46,6 @@
                 "status": {
                   "type": "string",
                   "example": "received"
-                },
-                "forwarded_to": {
-                  "type": "string",
-                  "example": "https://webhook.site/XXXXXX"
                 }
               }
             }
