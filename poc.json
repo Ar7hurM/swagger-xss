@@ -11,6 +11,7 @@
   "paths": {
     "/login": {
       "post": {
+        "tags":["Login"],
         "summary": "User authentication",
         "description": "Insert your credentials",
         "consumes": ["application/json"],
