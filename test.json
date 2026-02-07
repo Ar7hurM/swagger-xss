@@ -3,7 +3,7 @@ info:
   title: Example yaml.spec
   description: |
      PENTEST
-     <img src="https://via.placeholder.com/300x150" />
+     <img src="https://imgs.search.brave.com/ZUjdNdxs6NgMz3rO5kcKEWqnFaTAopcHaMchdz7aHcI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGVtcGVzdC5jb20u/YnIvY3VzdG9tLXBh/Z2VzLWltYWdlcy9p/bWctMDEud2VicA" />
 paths:
   /accounts:
     get:
