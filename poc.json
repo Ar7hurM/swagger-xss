@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Secure Login",
+    "title": "Login Agrosatelite",
     "version": "1.0",
-    "description": "<h2>Login</h2><p>Enter your credentials to continue.</p><p><b>Note:</b> In a vulnerable Swagger UI, credentials entered here could be exfiltrated via a malicious backend or webhook.</p>"
+    "description": "Enter your credentials to continue."
   },
   "host": "example.com",
   "basePath": "/",
@@ -12,7 +12,7 @@
     "/login": {
       "post": {
         "summary": "User authentication",
-        "description": "<p>This endpoint simulates a login request.</p><p><b>POC:</b> Credentials submitted here demonstrate how a malicious OpenAPI specification could be used for phishing or credential harvesting.</p>",
+        "description": "Insert your credentials",
         "consumes": ["application/json"],
         "produces": ["application/json"],
         "parameters": [
