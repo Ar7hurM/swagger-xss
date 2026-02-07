@@ -1,0 +1,20 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "POC HTML Injection",
+    "description": "<h2>Swagger HTML Injection</h2><img src='https://via.placeholder.com/400x200?text=HTML+Injected' />",
+    "version": "1.0"
+  },
+  "paths": {
+    "/test": {
+      "get": {
+        "summary": "Test",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
